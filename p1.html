@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Masuk Parkir</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('backround.gif'); /*  */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+            margin-top: 70px;
+        }
+
+        h2{
+            text-align: center;
+            font-family: 'Times New Roman';
+            margin-top: 1%;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="date"] {
+            width: 96%;
+            padding: 9px;
+            border-radius: 15px;
+            border: 1px solid #0e0e0e;
+        }
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .submit-button {
+            background-color: #4870ac;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .submit-button:hover {
+            background-color: #4870ac;
+        }
+        select{
+            margin-bottom: 4%;
+            width: 100%;
+            padding: 9px;
+            border-radius: 15px;
+            border: 1px solid #0e0e0e;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>FORMULIR PARKIR SKATEN</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="nama">NAMA SISWA:</label>
+            <input type="text" id="nama" name="nama" required>
+        </div>
+
+<tr><td>JURUSAN</td><td>
+<br>
+<SELECT NAME=txkota type="select">
+<OPTION></OPTION>
+<OPTION>KONTRUKSI KAPAL BAJA</OPTION>
+<OPTION>NAUTIKA KAPAL NIAGA</OPTION>
+<OPTION>TEKNIK PEMESINAN KAPAL</OPTION>
+<OPTION>TEKNIK KENDARAAN RINGAN OTOMOTIF</OPTION>
+<OPTION>TEKNIK BISNIS SEPEDA MOTOR</OPTION>
+<OPTION>REKAYASA PERANGKAT LUNAK</OPTION>
+<OPTION>MANAJEMEN LOGISTIK</OPTION>
+</select>
+</td></tr>
+        <div class="form-group">
+            <label for="tanggal-lahir">TANGGAL MASUK:</label>
+            <input type="date" id="tanggal_masuk" name="tanggal_masuk" required>
+        </div>
+        <a href="index.html" type="submit" class="submit-button">Kirim</a>
+    </form>
+</div>
+
+</body>
+</html>
